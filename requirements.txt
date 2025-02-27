@@ -1,10 +1,27 @@
-streamlit>=1.28.0
-pandas>=2.1.0
-transformers>=4.35.0
-matplotlib>=3.7.0
-networkx>=3.2.0
-wordcloud>=1.9.0
-spacy>=3.7.0
-vaderSentiment>=3.3.2
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
-en-core-web-trf @ https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.7.0/en_core_web_trf-3.7.0-py3-none-any.whl
+# Core dependencies
+streamlit==1.28.0
+pandas==2.0.3
+numpy==1.24.3
+
+# Visualization
+matplotlib==3.7.2
+networkx==3.1
+wordcloud==1.9.2
+
+# NLP tools
+spacy==3.6.1
+vaderSentiment==3.3.2
+
+# Transformers with compatible versions
+transformers==4.31.0
+torch==2.0.1
+
+# Explicitly pin versions to avoid binary incompatibility
+protobuf==3.20.3
+setuptools==65.5.1
+wheel==0.40.0
+
+# SpaCy models
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0-py3-none-any.whl
+# Optional: only include if necessary for your application
+# https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.6.0/en_core_web_trf-3.6.0-py3-none-any.whl
